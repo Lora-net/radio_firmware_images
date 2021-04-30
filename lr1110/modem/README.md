@@ -4,7 +4,9 @@
 
 ### [v1.0.7]
 
-After a modem reset, the join-request value DevNonce, usually increasing from one join-request to the other, could decrease from 1 to 9 units. As a consequence, a join server with DevNonce verificationenabled could drop the related join requests until the value gets higher than the one before reset. This means that some join-requests will never be answered by the join server.
+#### DevNonce
+
+After a modem reset, the join-request value DevNonce, usually increasing from one join-request to the other, could decrease from 1 to 9 units. As a consequence, a join server with DevNonce verification enabled could drop the related join requests until the value gets higher than the one before reset. This means that some join-requests will never be answered by the join server.
 
 This limitation will be mainly evident during the modem development & evaluation phases, as device should not reset in production phase.
 
@@ -14,3 +16,19 @@ The workaround, only for development, is to change modem region from the one sto
 1. Send `SetRegion()` command with targeted region
 
 This workaround should be used for development purpose only as it could have an impact on flash the lifetime but  **SHALL NOT** be used for production purpose.
+
+#### Frame counter
+
+In the case `nb_trans` > 1, if duty cycle limit is reached before the end of the sequence (`nb_trans` is reached or a reception occurs), the frame counter of the next packet is not incremented.
+
+#### Data-rate profile
+
+If the data-rate profile is updated by the network, the data returned by the `GetAdr()` command is not consistent.
+
+#### Watchdog
+
+If the internal watchdog is triggered during a radio operation (transmission, reception, GNSS or Wi-Fi scan), it is ignored. The user has to make sure that a watchdog is running on the application side.
+
+#### GetCharge
+
+The command `GetCharge()` returns erroneous values.
