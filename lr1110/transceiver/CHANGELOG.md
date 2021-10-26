@@ -4,6 +4,22 @@ All notable changes will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0x0307] 2021-09-22
+
+### Added
+
+- `GetLoraRxHeaderInfos()` to get information from LoRa header in Rx mode
+- `GnssGetSvVisible()` to get the number of visible space vehicles based on given assistance data
+
+### Changed
+
+- Result mask format in `GnssAutonomous()` and `GnssAssisted()`
+
+### Removed
+
+- `GnssScanContinuous()`
+- GNSS scan mode 1 - "Dual scanning"
+
 ## [0x0306] 2021-07-20
 
 ### Added
