@@ -4,13 +4,13 @@
 
 The driver for this firmware is available [here](https://github.com/Lora-net/lr1110_driver).
 
-| Firmware | Driver to be used                                                       |
-| -------- | ----------------------------------------------------------------------- |
-| 0x0307   | [v6.0.0](https://github.com/Lora-net/lr1110_driver/releases/tag/v6.0.0) |
-| 0x0306   | [v5.0.1](https://github.com/Lora-net/lr1110_driver/releases/tag/v5.0.1) |
-| 0x0305   | [v4.0.0](https://github.com/Lora-net/lr1110_driver/releases/tag/v4.0.0) |
-| 0x0304   | [v3.0.0](https://github.com/Lora-net/lr1110_driver/releases/tag/v3.0.0) |
-| 0x0303   | [v2.0.1](https://github.com/Lora-net/lr1110_driver/releases/tag/v2.0.1) |
+| Firmware | Driver to be used                                                                                   |
+| -------- | --------------------------------------------------------------------------------------------------- |
+| 0x0307   | [v7.0.0](https://github.com/Lora-net/lr1110_driver/releases/tag/v7.0.0) / v6.0.0 is also compatible |
+| 0x0306   | [v5.0.1](https://github.com/Lora-net/lr1110_driver/releases/tag/v5.0.1)                             |
+| 0x0305   | [v4.0.0](https://github.com/Lora-net/lr1110_driver/releases/tag/v4.0.0)                             |
+| 0x0304   | [v3.0.0](https://github.com/Lora-net/lr1110_driver/releases/tag/v3.0.0)                             |
+| 0x0303   | [v2.0.1](https://github.com/Lora-net/lr1110_driver/releases/tag/v2.0.1)                             |
 
 ## Known limitations
 
