@@ -3,11 +3,12 @@
  *
  * \brief     Firmware transceiver version 0x0307 for LR1110 radio
  *
- * Revised BSD License
- * Copyright Semtech Corporation 2021. All rights reserved.
+ * The Clear BSD License
+ * Copyright Semtech Corporation 2022. All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
+ * modification, are permitted (subject to the limitations in the disclaimer
+ * below) provided that the following conditions are met:
  *     * Redistributions of source code must retain the above copyright
  *       notice, this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above copyright
@@ -17,20 +18,22 @@
  *       names of its contributors may be used to endorse or promote products
  *       derived from this software without specific prior written permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL SEMTECH CORPORATION BE LIABLE FOR ANY
- * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
- * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
- * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY
+ * THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+ * CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+ * NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ * PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL SEMTECH CORPORATION BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LR1110_FW_H
-#define LR1110_FW_H
+#ifndef LR11XX_FW_H
+#define LR11XX_FW_H
 
 /*
  * -----------------------------------------------------------------------------
@@ -52,22 +55,22 @@
 /*!
  * \brief Firmware version
  */
-#define LR1110_FIRMWARE_VERSION 0x0307
+#define LR11XX_FIRMWARE_VERSION 0x0307
 
 /*!
  * \brief Firmware type
  */
-#define LR1110_FIRMWARE_UPDATE_TO LR1110_FIRMWARE_UPDATE_TO_TRX
+#define LR11XX_FIRMWARE_UPDATE_TO LR1110_FIRMWARE_UPDATE_TO_TRX
 
 /*!
  * \brief Size in words of the firmware image
  */
-#define LR1110_FIRMWARE_IMAGE_SIZE 61320
+#define LR11XX_FIRMWARE_IMAGE_SIZE 61320
 
 /*!
  * \brief Array containing the firmware image
  */
-const uint32_t lr1110_firmware_image[] = {
+const uint32_t lr11xx_firmware_image[LR11XX_FIRMWARE_IMAGE_SIZE] = {
     0xc4fa791c, 0x7210409f, 0xbf601c2a, 0xb786ae60, 0x6b48ca19, 0x2682a714, 0x02603cb6, 0x18147bc5, 0x1fb8ad43,
     0xcc7aff2b, 0xf5710ccb, 0x68bef368, 0xd3b5223d, 0x8fc2bd69, 0xcceb7a85, 0xa9ec8afd, 0x6665784f, 0xb173117c,
     0x8ca11cb2, 0x81706a1c, 0x78f98c6b, 0xd93674f3, 0x66627f55, 0x1d4164f7, 0xf69c0446, 0x55d03f02, 0x73f64248,
