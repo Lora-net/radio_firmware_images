@@ -6,18 +6,19 @@ The driver for this firmware is available [here](https://github.com/Lora-net/lr1
 
 | Firmware | Driver to be used                                                             |
 | -------- | ----------------------------------------------------------------------------- |
+| v1.1.8   | [v3.1.0](https://github.com/Lora-net/lr1110_modem_driver/releases/tag/v3.1.0) |
 | v1.1.7   | [v3.0.1](https://github.com/Lora-net/lr1110_modem_driver/releases/tag/v3.0.1) |
 | v1.0.7   | [v2.0.1](https://github.com/Lora-net/lr1110_modem_driver/releases/tag/v2.0.1) |
 
 ## Known limitations
 
-### [v1.1.7]
+### [v1.1.8]
 
 #### Index values for file upload initialization command (present since v1.0.7)
 
 Only index values from 1 to 223 are allowed.
 
-#### Power emission for ARIB
+#### Power emission for ARIB (present since v1.1.7)
 
 For ARIB, power emission must be typically set to 9dBm by setting the power offset during the JOIN procedure using SetTxPowerOffset command during the device configuration phase after Reset as explained in the Reference Manual documentation.
 
@@ -37,13 +38,22 @@ The number of retransmission cannot be set greater than 7. If value higher than 
 
 A partial GNSS almanac update will modify the constellation to scan parameter. As a workaround, the user has to reconfigure this parameter just before launching a GNSS scan.
 
-#### ADR fallback with uplink dwell time activated
+#### ADR fallback with uplink dwell time activated (present since v1.1.7)
 
 For AS923 and AU915 regions, the ADR fallback is equal to DR1 or DR0 when the uplink dwell time is activated: the modem cannot send uplink frames anymore.
 
-#### Modem crash in region RU864
+#### Modem crash in region RU864 (present since v1.1.7)
 
 When receiving a NewChannelReq MAC command in RU864 region, the modem crashes.
+
+
+### [v1.1.7]
+
+#### High ACP (Adjacent Channel Power) (present since v1.0.7)
+
+When the chip wakes up from sleep mode with retention, a parameter is not reconfigured properly. This misconfiguration can lead to an unexpectedly high adjacent channel power in all subsequent transmissions.
+
+The issue appears only in LoRa modulation, for all bandwidths except for 500kHz.
 
 
 ### [v1.0.7]
@@ -77,4 +87,3 @@ If the internal watchdog is triggered during a radio operation (transmission, re
 #### GetCharge
 
 The command `GetCharge()` returns erroneous values.
-
