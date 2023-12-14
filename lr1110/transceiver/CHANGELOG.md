@@ -4,6 +4,16 @@ All notable changes will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0x0401] 2023-12-15
+
+### Added
+
+- Support for GNSS scans with acquisition of satellite broadcasted time, assisted location estimation and almanac update based on satellites signal demodulation
+
+### Fixed
+
+- Improve out-of-band emission glitch that may occure under certain circumstances with multiple consecutive LoRa transmissions
+
 ## [0x0308] 2023-06-29
 
 ### Added
