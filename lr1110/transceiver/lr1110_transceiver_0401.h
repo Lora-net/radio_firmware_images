@@ -13,7 +13,7 @@
  *       notice, this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above copyright
  *       notice, this list of conditions and the following disclaimer in the
- *       documentation and/or other materials provided with the distribution. 
+ *       documentation and/or other materials provided with the distribution.
  *     * Neither the name of the Semtech corporation nor the
  *       names of its contributors may be used to endorse or promote products
  *       derived from this software without specific prior written permission.
@@ -7734,8 +7734,8 @@ const uint32_t lr11xx_firmware_image[] = {
 };
 
 /*!
-* \brief Size in words of the firmware image
-*/
+ * \brief Size in words of the firmware image
+ */
 #define LR11XX_FIRMWARE_IMAGE_SIZE 61320
 
 #endif /* LR11XX_FW_H */

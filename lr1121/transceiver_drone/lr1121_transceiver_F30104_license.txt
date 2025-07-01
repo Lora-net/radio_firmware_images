@@ -1,8 +1,8 @@
-Semtech's software made available with this lr1121_modem_05020001_license.txt
+Semtech's software made available with this lr1121_transceiver_F30104_license.txt
 file includes or is provided with certain third-party components that are
 subject to separate terms and conditions specified by applicable third-party
 licenses (“Third-Party Components”). These Third-Party Components and applicable
-licenses are set forth in this lr1121_modem_05020001_license.txt file.
+licenses are set forth in this lr1121_transceiver_F30104_license.txt file.
 
 Your access and use of all Third-Party Components are at all times governed by
 the applicable third-party licenses.
@@ -10,7 +10,7 @@ the applicable third-party licenses.
 _______________________________________________________________________________
 
 
-LR1121 modem firmware 0x05020001
+LR1121 transceiver firmware 0xF30104
 
 _______________________________________________________________________________
 
@@ -19,7 +19,7 @@ Semtech Corporation
 -------------------
 
 The Clear BSD License
-Copyright Semtech Corporation 2024. All rights reserved.
+Copyright Semtech Corporation 2025. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted (subject to the limitations in the disclaimer

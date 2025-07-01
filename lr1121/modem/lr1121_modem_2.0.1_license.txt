@@ -1,8 +1,8 @@
-Semtech's software made available with this lr1110_modem_1.1.9_license.txt
+Semtech's software made available with this lr1121_modem_2.0.1_license.txt
 file includes or is provided with certain third-party components that are
 subject to separate terms and conditions specified by applicable third-party
 licenses (“Third-Party Components”). These Third-Party Components and applicable
-licenses are set forth in this lr1110_modem_1.1.9_license.txt file.
+licenses are set forth in this lr1121_modem_2.0.1_license.txt file.
 
 Your access and use of all Third-Party Components are at all times governed by
 the applicable third-party licenses.
@@ -10,7 +10,7 @@ the applicable third-party licenses.
 _______________________________________________________________________________
 
 
-LR1110 modem firmware 0x04010109
+LR1121 modem firmware 0x05020001
 
 _______________________________________________________________________________
 
