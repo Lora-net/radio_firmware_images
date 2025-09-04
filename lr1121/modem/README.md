@@ -28,11 +28,25 @@ LoRa Basics Modem-E offers seamless embedding of the LoRaWAN stack into LR1121 c
 
 The driver for this firmware is available here [https://github.com/Lora-net/lr1121_modemE_driver](https://github.com/Lora-net/lr1121_modemE_driver).
 
-| Firmware | Driver to be used                                                             |
-| -------- | ----------------------------------------------------------------------------- |
+| Firmware | Driver to be used                                                              |
+| -------- | ------------------------------------------------------------------------------ |
+| v2.0.2   | [v1.1.0](https://github.com/Lora-net/lr1121_modemE_driver/releases/tag/v1.1.0) |
 | v2.0.1   | [v1.0.0](https://github.com/Lora-net/lr1121_modemE_driver/releases/tag/v1.0.0) |
 
+
+## Changelog
+
+### [v2.0.2]
+
+Refer to the [CHANGELOG.md](CHANGELOG.md)
+
 ## Known limitations
+
+### [v2.0.2]
+
+#### LoRaWAN duty-cycle
+
+When multiple sub-bands are enabled and the modem transmits uplinks using only one frequency (e.g., LR-FHSS, with LoRaWAN this is the case for FSK and LoRa with BW250 data rates), once the duty-cycle for that sub-band is exhausted, uplinks are not sent anymore accordingly to the regulations, however the stack will reports the remaining duty-cycle allotment of all the enabled sub-bands. As a consequence the end user is not made aware that the used sub-band has reached the maximum authorized duty cycle.
 
 ### [v2.0.1]
 
