@@ -1,8 +1,30 @@
 # LoRa Basics Modem-E firmware changelog
 
-All notable changes will be documented in this file.
+## Modem-e v2.1.0 (2026-04-03)
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+From version 2.1.0+, Modem-E V2 has been ported to the LR1110 as well. The two chips share the exact same LoRaWAN stack.
+On the LR1110, it is not possible to use GNSS and WIFI functionalities with the latest Modem-E V2 firmware installed.
+
+### Changes
+* [Modem] Update LoRaWAN stack with LoRa Basic Modem v4.9.1
+* [Modem] Reset Event does not return reset counter anymore
+
+### Add
+* [Modem] LoRaWAN ABP support with save/restore ram context in NVM
+* [LoRaWAN] possibility to update LoRaWAN channel Mask before sending uplinks
+* [Modem] Event SMTC_MODEM_EVENT_NO_DOWNLINK_THRESHOLD and associated commands
+* [Modem] Event SMTC_MODEM_EVENT_RESET_REQUEST when the modem need to be reset, for example the LoRaWAN certification could request a DUT reset
+
+### Fixes
+* [Modem] CMD_TST_TX_LORA the syncword was ignored and not applied
+
+### Security
+
+Refer to [Semtech security bulletin](https://www.semtech.com/company/security/security-bulletins).
+
+- CVE-2025-14857
+- CVE-2025-14858
+- CVE-2025-14859
 
 ## [v1.1.9] 2024-02-29
 

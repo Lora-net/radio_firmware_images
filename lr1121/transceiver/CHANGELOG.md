@@ -4,6 +4,20 @@ All notable changes will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0x0104] 2026-04-01
+
+### Added
+
+- Low latency APIs
+
+### Security
+
+Refer to [Semtech security bulletin](https://www.semtech.com/company/security/security-bulletins).
+
+- CVE-2025-14857
+- CVE-2025-14858
+- CVE-2025-14859
+
 ## [0x0103] 2023-12-15
 
 ### Fixed

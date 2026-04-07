@@ -1,6 +1,6 @@
 # radio_firmware_images
 
-This repository contains _radio chip firmware_ files sorted by radio chip and types of firmwares (transceiver or modem).
+This repository contains _radio chip firmware_ files sorted by radio chip and types of firmwares (transceiver, modem or bootloader updater).
 For each existing combination can be found 3 files:
 
 * `*.bin` : A binary representation of the firmware image (Do not drag and drop!)

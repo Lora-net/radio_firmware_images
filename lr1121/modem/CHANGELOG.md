@@ -1,5 +1,28 @@
 # Modem-e v2.x.x CHANGELOG
 
+## Modem-e v2.1.0 (2026-04-03)
+
+### Changes
+* [Modem] Update LoRaWAN stack with LoRa Basic Modem v4.9.1
+* [Modem] Reset Event does not return reset counter anymore
+
+### Add
+* [Modem] LoRaWAN ABP support with save/restore ram context in NVM
+* [LoRaWAN] possibility to update LoRaWAN channel Mask before sending uplinks
+* [Modem] Event SMTC_MODEM_EVENT_NO_DOWNLINK_THRESHOLD and associated commands
+* [Modem] Event SMTC_MODEM_EVENT_RESET_REQUEST when the modem need to be reset, for example the LoRaWAN certification could request a DUT reset
+
+### Fixes
+* [Modem] CMD_TST_TX_LORA the syncword was ignored and not applied
+
+### Security
+
+Refer to [Semtech security bulletin](https://www.semtech.com/company/security/security-bulletins).
+
+- CVE-2025-14857
+- CVE-2025-14858
+- CVE-2025-14859
+
 ## Modem-e v2.0.2 (2025-08-25)
 
 ### Changes

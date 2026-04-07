@@ -23,10 +23,20 @@ LoRa Basics Modem-E offers seamless embedding of the LoRaWAN stack into LR1121 c
 * Multicast class B/C
 * FUOTA (one fragmentation session is supported)
 * The possibility to co-host on the same sensor LoRaWAN and proprietary protocol leveraging state of the art RF performances of LR1121.
+* OTAA/ABP to join a network
+* transceiver commands are still available
 
 ## Driver version
 
 The driver for this firmware is available here [https://github.com/Lora-net/lr1121_modemE_driver](https://github.com/Lora-net/lr1121_modemE_driver).
+
+### Latest supported versions
+
+| Firmware | Driver to be used                                                              |
+| -------- | ------------------------------------------------------------------------------ |
+| v2.1.0   | [v2.0.0](https://github.com/Lora-net/lr1121_modemE_driver/releases/tag/v2.0.0) |
+
+### Deprecated versions
 
 | Firmware | Driver to be used                                                              |
 | -------- | ------------------------------------------------------------------------------ |
@@ -36,13 +46,19 @@ The driver for this firmware is available here [https://github.com/Lora-net/lr11
 
 ## Changelog
 
+### [v2.1.0]
+
+Refer to the [CHANGELOG.md](CHANGELOG.md)
+
+## Changelog
+
 ### [v2.0.2]
 
 Refer to the [CHANGELOG.md](CHANGELOG.md)
 
 ## Known limitations
 
-### [v2.0.2]
+### [v2.0.2] [v2.1.0]
 
 #### LoRaWAN duty-cycle
 

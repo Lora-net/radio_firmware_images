@@ -12,9 +12,38 @@ A complete reference implementation of the upgrade process is available in the [
 
 Pre-built upgrade images for the Semtech EVK/DVK (using the ST Nucleo L476 MCU) can be found in this project [Wiki](https://github.com/Lora-net/SWTL001/wiki) page.
 
+## Description
+
+LoRa Basics Modem-E offers seamless embedding of the LoRaWAN stack into LR1110 chip. Once flashed on the LR1110, the binary code of Modem-E offers:
+
+* Fully featured stack with all classes (A/B/C)
+* all regional parameters and WW2G4
+* CSMA/LBT
+* Relayed end-device (i.e. Relay Tx)
+* Multicast class B/C
+* FUOTA (one fragmentation session is supported)
+* The possibility to co-host on the same sensor LoRaWAN and proprietary protocol leveraging state of the art RF performances of LR1121.
+* OTAA/ABP to join a network
+* transceiver commands are still available
+
 ## Driver version
 
-The driver for this firmware is available [here](https://github.com/Lora-net/lr1110_modem_driver).
+Up until firmware v1.1.9 included, the LR1110 modem had a dedicated driver.
+
+With firmware v2.1.0 included, the driver for modem firmware is common to LR1110 and LR1121.
+Therefore from firmware version v2.1.0 the driver is changed to the one used for LR1121 modem.
+
+### Latest supported versions
+
+The driver for this firmware is available from [lr1121_modemE_driver](https://github.com/Lora-net/lr1121_modemE_driver).
+
+| Firmware | Driver to be used                                                              |
+| -------- | ------------------------------------------------------------------------------ |
+| v2.1.0   | [v2.0.0](https://github.com/Lora-net/lr1121_modemE_driver/releases/tag/v2.0.0) |
+
+### Deprecated versions
+
+The driver for this firmware is available from [lr1110_modem_driver](https://github.com/Lora-net/lr1110_modem_driver).
 
 | Firmware | Driver to be used                                                             |
 | -------- | ----------------------------------------------------------------------------- |
@@ -23,7 +52,19 @@ The driver for this firmware is available [here](https://github.com/Lora-net/lr1
 | v1.1.7   | [v3.0.1](https://github.com/Lora-net/lr1110_modem_driver/releases/tag/v3.0.1) |
 | v1.0.7   | [v2.0.1](https://github.com/Lora-net/lr1110_modem_driver/releases/tag/v2.0.1) |
 
+## Changelog
+
+### [v2.1.0]
+
+Refer to the [CHANGELOG.md](CHANGELOG.md)
+
 ## Known limitations
+
+### [v2.1.0]
+
+#### LoRaWAN duty-cycle
+
+When multiple sub-bands are enabled and the modem transmits uplinks using only one frequency (e.g., LR-FHSS, with LoRaWAN this is the case for FSK and LoRa with BW250 data rates), once the duty-cycle for that sub-band is exhausted, uplinks are not sent anymore accordingly to the regulations, however the stack will reports the remaining duty-cycle allotment of all the enabled sub-bands. As a consequence the end user is not made aware that the used sub-band has reached the maximum authorized duty cycle.
 
 ### [v1.1.9]
 

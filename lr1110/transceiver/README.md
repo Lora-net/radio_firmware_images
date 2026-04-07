@@ -14,7 +14,15 @@ Pre-built upgrade images for the Semtech EVK/DVK (using the ST Nucleo L476 MCU) 
 
 ## Driver version
 
+### Latest supported versions
+
 The driver for this firmware is available [here](https://github.com/Lora-net/SWDR001).
+
+| Firmware | Driver to be used                                                 |
+| -------- | ----------------------------------------------------------------- |
+| 0x0402   | [v3.0.0](https://github.com/Lora-net/SWDR001/releases/tag/v3.0.0) |
+
+### Deprecated versions
 
 | Firmware | Driver to be used                                                 |
 | -------- | ----------------------------------------------------------------- |
