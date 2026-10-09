@@ -60,7 +60,7 @@
 /*!
  * \brief Firmware type
  */
-#define LR11XX_FIRMWARE_UPDATE_TO LR1110_FIRMWARE_UPDATE_TO_MODEM_V1
+#define LR11XX_FIRMWARE_UPDATE_TO LR1110_FIRMWARE_UPDATE_TO_MODEM_V2
 
 /*!
  * \brief Array containing the firmware image

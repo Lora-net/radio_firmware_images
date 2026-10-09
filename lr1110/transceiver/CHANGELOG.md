@@ -4,6 +4,14 @@ All notable changes will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0x0403] 2026-10-12
+
+### Security
+
+Refer to [Semtech security bulletin](https://www.semtech.com/company/security/security-bulletins).
+
+- CVE-2026-6232
+
 ## [0x0402] 2026-04-01
 
 ### Security

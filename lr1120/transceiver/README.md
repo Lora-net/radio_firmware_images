@@ -18,15 +18,22 @@ The driver for this firmware is available [here](https://github.com/Lora-net/SWD
 
 | Firmware | Driver to be used                                                 |
 | -------- | ----------------------------------------------------------------- |
-| 0x0202   | [v3.0.0](https://github.com/Lora-net/SWDR001/releases/tag/v3.0.0) |
+| 0x0203   | [v3.0.0](https://github.com/Lora-net/SWDR001/releases/tag/v3.0.0) |
+
+### Factory Security-patched version
+
+| Firmware | Driver to be used                                                 | Comment                                                |
+| -------- | ----------------------------------------------------------------- | ------------------------------------------------------ |
+| 0xA20101 | [v2.1.1](https://github.com/Lora-net/SWDR001/releases/tag/v2.1.1) | Same firmware as 0x0101 (same API) with security fixes |
 
 ### Deprecated versions
 
-| Firmware | Driver to be used                                                 |
-| -------- | ----------------------------------------------------------------- |
-| 0x0201   | [v2.4.1](https://github.com/Lora-net/SWDR001/releases/tag/v2.4.1) |
-| 0x0102   | [v2.3.0](https://github.com/Lora-net/SWDR001/releases/tag/v2.3.0) |
-| 0x0101   | [v2.1.1](https://github.com/Lora-net/SWDR001/releases/tag/v2.1.1) |
+| Firmware | Driver to be used                                                 | Comment                                                                      |
+| -------- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| 0x0202   | [v3.0.0](https://github.com/Lora-net/SWDR001/releases/tag/v3.0.0) |                                                                              |
+| 0x0201   | [v2.4.1](https://github.com/Lora-net/SWDR001/releases/tag/v2.4.1) |                                                                              |
+| 0x0102   | [v2.3.0](https://github.com/Lora-net/SWDR001/releases/tag/v2.3.0) |                                                                              |
+| 0x0101   | [v2.1.1](https://github.com/Lora-net/SWDR001/releases/tag/v2.1.1) | Default production firmware (the version flashed in the chip at the factory) |
 
 ## Known limitations
 

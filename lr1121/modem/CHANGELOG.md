@@ -1,5 +1,20 @@
 # Modem-e v2.x.x CHANGELOG
 
+## Modem-e v2.1.1 (2026-10-12)
+
+### Changes
+* [Modem] Update LoRaWAN stack with LoRa Basic Modem v4.9.2
+
+### Fixes
+* Security fix
+* In Modem Suspend mode, the modem will no longer enter sleep mode automatically.
+
+### Security
+
+Refer to [Semtech security bulletin](https://www.semtech.com/company/security/security-bulletins).
+
+- CVE-2026-6232
+
 ## Modem-e v2.1.0 (2026-04-03)
 
 ### Changes

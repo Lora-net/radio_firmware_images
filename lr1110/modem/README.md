@@ -1,4 +1,4 @@
-# LoRa Basics Modem-E firmware
+# LoRa Basics Modem-E v2 firmware
 
 ## Content
 
@@ -14,10 +14,10 @@ Pre-built upgrade images for the Semtech EVK/DVK (using the ST Nucleo L476 MCU) 
 
 ## Description
 
-LoRa Basics Modem-E offers seamless embedding of the LoRaWAN stack into LR1110 chip. Once flashed on the LR1110, the binary code of Modem-E offers:
+LoRa Basics Modem-E offers seamless embedding of the LoRaWAN 1.0.4 stack into LR1110 chip. Once flashed on the LR1110, the binary code of Modem-E offers:
 
 * Fully featured stack with all classes (A/B/C)
-* all regional parameters and WW2G4
+* All LoRaWAN Regional Parameters RP2 v1.0.3
 * CSMA/LBT
 * Relayed end-device (i.e. Relay Tx)
 * Multicast class B/C
@@ -39,6 +39,7 @@ The driver for this firmware is available from [lr1121_modemE_driver](https://gi
 
 | Firmware | Driver to be used                                                              |
 | -------- | ------------------------------------------------------------------------------ |
+| v2.1.1   | [v2.1.1](https://github.com/Lora-net/lr1121_modemE_driver/releases/tag/v2.1.1) |
 | v2.1.0   | [v2.0.0](https://github.com/Lora-net/lr1121_modemE_driver/releases/tag/v2.0.0) |
 
 ### Deprecated versions
@@ -53,6 +54,10 @@ The driver for this firmware is available from [lr1110_modem_driver](https://git
 | v1.0.7   | [v2.0.1](https://github.com/Lora-net/lr1110_modem_driver/releases/tag/v2.0.1) |
 
 ## Changelog
+
+### [v2.1.1]
+
+Refer to the [CHANGELOG.md](CHANGELOG.md)
 
 ### [v2.1.0]
 
